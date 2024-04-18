@@ -60,3 +60,49 @@ function checkUser() {
         }
     });
 }
+
+// password and username checking
+
+function checkUser()
+{
+    var user = document.getElementById('username');
+    var message = document.getElementById('error-nwl');
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+ 	
+    if(user.value.length > 3)
+    {
+        user.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "character number ok!"
+    }
+    else
+    {
+        user.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "your username must have at least 4 digit!"
+        return;
+    }
+}  
+
+function checkPass()
+{
+    var pass = document.getElementById('password');
+    var message = document.getElementById('error-nwl');
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+ 	
+    if(pass.value.length > 5)
+    {
+        pass.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "character number ok!"
+    }
+    else
+    {
+        pass.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = " your username must have at least 6 digit!"
+        return;
+    }
+}  
