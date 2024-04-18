@@ -1,0 +1,28 @@
+body {
+    background-image: url("./images/pikachu.jpg");
+    background-repeat: repeat-x;
+    background-size: 95%;
+}
+
+/* div {
+    display: flex;
+} */
+
+img {
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    bottom: -4%;
+    display: none;
+}
+
+canvas {
+    z-index: 2;
+}
+
+audio {
+    position: absolute;
+    top: 0%;
+    right: 12%;
+    height: 40px;
+}
